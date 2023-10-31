@@ -45,8 +45,4 @@ while True:
         continue
     elif option == "3":
         break
-    else:
-        print("Invalid option")
-        menu()
-
 
