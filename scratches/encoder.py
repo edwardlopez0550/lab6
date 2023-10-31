@@ -12,10 +12,10 @@ def encode(password):
     enc_pass = ""
     for i in range(0, len(password)):
         if int(password[i]) < 7:
-            num = int(password[i]) + 4
+            num = int(password[i]) + 3
             enc_pass += str(num)
         else:
-            num = int(password[i]) - 9
+            num = int(password[i]) - 7
             enc_pass += str(num)
     print(enc_pass)
 
