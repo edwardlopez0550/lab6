@@ -19,6 +19,17 @@ def encode(password):
             enc_pass += str(num)
     print(enc_pass)
 
+def decode(enc_pass):
+    dec_pass = ""
+    for i in range(0, len(enc_pass)):
+        if int(enc_pass[i]) > 3:
+            num = int(enc_pass[i]) - 3
+            dec_pass += str(num)
+        else:
+            num = int(enc_pass[i]) + 7
+            dec_pass += str(num)
+    print(f"The encoded password is {enc_pass}, and the original password is {dec_pass}")
+
 
 
 menu()
